@@ -100,20 +100,20 @@ export default function Mercury() {
       </Tabs>
       <div className="statistics">
         <div className="row">
-          <p>Rotation Time</p>
-          <p>58.6 Days</p>
+          <p className="stat-name">Rotation Time</p>
+          <p className="stat-value">58.6 Days</p>
         </div>
         <div className="row">
-          <p>Revolution Time</p>
-          <p>87.97 Days</p>
+          <p className="stat-name">Revolution Time</p>
+          <p className="stat-value">87.97 Days</p>
         </div>
         <div className="row">
-          <p>Radius</p>
-          <p>2,439.7 KM</p>
+          <p className="stat-name">Radius</p>
+          <p className="stat-value">2,439.7 KM</p>
         </div>
         <div className="row">
-          <p>Temperature</p>
-          <p>430°C</p>
+          <p className="stat-name">Temperature</p>
+          <p className="stat-value">430°C</p>
         </div>
       </div>
     </section>

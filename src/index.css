@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: #070724 url("./src/assets/background-stars.svg") no-repeat center center;
 }
 
 img {
@@ -57,6 +58,7 @@ h1 + p {
 }
 
 .tab {
+    color: white;
     display: block;
     cursor: pointer;
     font-family: "League Spartan", sans-serif;
@@ -74,9 +76,41 @@ h1 + p {
     transition: all 0.2s ease;
 }
 
+.stat-name {
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.04544rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.5;
+}
+
+.stat-value {
+    font-family: Antonio, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -0.04688rem;
+    text-transform: uppercase;
+    color: white;
+}
+
 .heading-text {
     text-align: center;
     width: 80%;
     margin-inline: auto;
     margin-top: 6.125em;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.563em 1.5em;
+    border: 1px solid;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 1em;
 }
