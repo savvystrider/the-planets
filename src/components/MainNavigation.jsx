@@ -3,31 +3,33 @@ import { Link } from "react-router-dom";
 export default function MainNavigation() {
   return (
     <header>
-      <h2>The Planets</h2>
+      <Link to="">
+        <h2>The Planets</h2>
+      </Link>
       <nav>
         <li>
-          <Link></Link>
+          <Link to="/mercury">Mercury</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/venus">Venus</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/earth">Earth</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/mars">Mars</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/jupiter">Jupiter</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/saturn">Saturn</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/uranus">Uranus</Link>
         </li>
         <li>
-          <Link></Link>
+          <Link to="/neptune">Neptune</Link>
         </li>
       </nav>
     </header>
