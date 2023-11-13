@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    margin-inline: auto;
+    margin-top: 5.938em;
+}
+
+.geology-img {
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    right: 0;
+    max-width: 9.875rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-family: Antonio, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 + p {
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.688em;
+}
+
+.tab {
+    display: block;
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12056rem;
+    padding-bottom: 1em;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.active-tab {
+    border-bottom: 0.25em solid;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.heading-text {
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 6.125em;
+}
