@@ -28,7 +28,7 @@ export default function Mercury() {
               terrestrial planets in the Solar System, and is a rocky body like
               Earth.
             </p>
-            <p>
+            <p className="source-text">
               Source:{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Mercury_(planet)"
