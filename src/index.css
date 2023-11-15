@@ -50,6 +50,52 @@ h1 + p {
     line-height: 1.375rem;
 }
 
+h2 {
+    color: white;
+    font-family: Antonio, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: -0.06563rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    font-family: "League Spartan", san;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: 0.0625rem;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+}
+
 .tab-list {
     display: flex;
     justify-content: center;
@@ -113,6 +159,13 @@ h1 + p {
     opacity: 0.5;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
 .heading-text {
     text-align: center;
     width: 80%;
@@ -131,4 +184,10 @@ h1 + p {
     margin-inline: auto;
     margin-bottom: 1em;
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width: 1000px) {
+    .toggle-btn {
+        display: none;
+    }
 }

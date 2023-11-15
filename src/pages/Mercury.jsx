@@ -54,7 +54,7 @@ export default function Mercury() {
               second highest in the Solar System at 5.427 g/cm3 , only slightly
               less than Earth's density.
             </p>
-            <p>
+            <p className="source-text">
               Source:{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
@@ -84,7 +84,7 @@ export default function Mercury() {
               that it has been geologically inactive for billions of years. It
               is more heterogeneous than either Mars's or the Moon’s.
             </p>
-            <p>
+            <p className="source-text">
               Source:{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"

@@ -7,6 +7,14 @@ export default function MainNavigation() {
         <h2>The Planets</h2>
       </Link>
       <nav>
+        <button
+          aria-expanded="false"
+          aria-controls="menu"
+          className="toggle-btn"
+        >
+          <img src="src\assets\icon-hamburger.svg" alt="" />
+          <span className="sr-only">menu</span>
+        </button>
         <ul>
           <li>
             <Link to="/mercury">Mercury</Link>
