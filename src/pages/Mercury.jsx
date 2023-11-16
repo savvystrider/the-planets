@@ -1,4 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import planetData from "../data.json";
+
+const planet = planetData[0];
 
 export default function Mercury() {
   return (
@@ -32,18 +35,12 @@ export default function Mercury() {
             <img src="src\assets\planet-mercury.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Mercury</h1>
-            <p>
-              Mercury is the smallest planet in the Solar System and the closest
-              to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
-              shortest of all the Sun's planets. Mercury is one of four
-              terrestrial planets in the Solar System, and is a rocky body like
-              Earth.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.overview.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                href={planet.overview.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,18 +55,12 @@ export default function Mercury() {
             <img src="src\assets\planet-mercury-internal.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Mercury</h1>
-            <p>
-              Mercury appears to have a solid silicate crust and mantle
-              overlying a solid, iron sulfide outer core layer, a deeper liquid
-              core layer, and a solid inner core. The planet's density is the
-              second highest in the Solar System at 5.427 g/cm3 , only slightly
-              less than Earth's density.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.structure.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+                href={planet.structure.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,17 +80,12 @@ export default function Mercury() {
             />
           </div>
           <div className="heading-text">
-            <h1>Mercury</h1>
-            <p>
-              Mercury's surface is similar in appearance to that of the Moon,
-              showing extensive mare-like plains and heavy cratering, indicating
-              that it has been geologically inactive for billions of years. It
-              is more heterogeneous than either Mars's or the Moon’s.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.geology.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+                href={planet.geology.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -113,19 +99,19 @@ export default function Mercury() {
       <div className="statistics">
         <div className="row">
           <p className="stat-name">Rotation Time</p>
-          <p className="stat-value">58.6 Days</p>
+          <p className="stat-value">{planet.rotation}</p>
         </div>
         <div className="row">
           <p className="stat-name">Revolution Time</p>
-          <p className="stat-value">87.97 Days</p>
+          <p className="stat-value">{planet.revolution}</p>
         </div>
         <div className="row">
           <p className="stat-name">Radius</p>
-          <p className="stat-value">2,439.7 KM</p>
+          <p className="stat-value">{planet.radius}</p>
         </div>
         <div className="row">
           <p className="stat-name">Temperature</p>
-          <p className="stat-value">430°C</p>
+          <p className="stat-value">{planet.temperature}</p>
         </div>
       </div>
     </section>

@@ -1,4 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import planetData from "../data.json";
+
+const planet = planetData[2];
 
 export default function Earth() {
   return (
@@ -32,18 +35,12 @@ export default function Earth() {
             <img src="src\assets\planet-earth.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Earth</h1>
-            <p>
-              Third planet from the Sun and the only known planet to harbor
-              life. About 29.2% of Earth's surface is land with remaining 70.8%
-              is covered with water. Earth's distance from the Sun, physical
-              properties and geological history have allowed life to evolve and
-              thrive.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.overview.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Earth"
+                href={planet.overview.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,17 +55,12 @@ export default function Earth() {
             <img src="src\assets\planet-earth-internal.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Earth</h1>
-            <p>
-              Earth's interior, like that of the other terrestrial planets, is
-              divided into layers by their chemical or physical (rheological)
-              properties. The outer layer is a chemically distinct silicate
-              solid crust, which is underlain by a highly viscous solid mantle.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.structure.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Earth#Internal_structure"
+                href={planet.structure.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -80,7 +72,7 @@ export default function Earth() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="https://en.wikipedia.org/wiki/Earth" alt="" />
+            <img src="src\assets\planet-earth.svg" alt="" />
             <img
               src="src\assets\geology-earth.png"
               alt=""
@@ -88,14 +80,8 @@ export default function Earth() {
             />
           </div>
           <div className="heading-text">
-            <h1>Earth</h1>
-            <p>
-              The total surface area of Earth is about 510 million km2. The
-              continental crust consists of lower density material such as the
-              igneous rocks granite and andesite. Less common is basalt, a
-              denser volcanic rock that is the primary constituent of the ocean
-              floors.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.geology.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
@@ -113,19 +99,19 @@ export default function Earth() {
       <div className="statistics">
         <div className="row">
           <p className="stat-name">Rotation Time</p>
-          <p className="stat-value">0.99 Days</p>
+          <p className="stat-value">{planet.rotation}</p>
         </div>
         <div className="row">
           <p className="stat-name">Revolution Time</p>
-          <p className="stat-value">365.26 Days</p>
+          <p className="stat-value">{planet.revolution}</p>
         </div>
         <div className="row">
           <p className="stat-name">Radius</p>
-          <p className="stat-value">6,371 KM</p>
+          <p className="stat-value">{planet.radius}</p>
         </div>
         <div className="row">
           <p className="stat-name">Temperature</p>
-          <p className="stat-value">16°C</p>
+          <p className="stat-value">{planet.temperature}</p>
         </div>
       </div>
     </section>

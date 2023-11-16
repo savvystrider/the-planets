@@ -1,4 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import planetData from "../data.json";
+
+const planet = planetData[1];
 
 export default function Venus() {
   return (
@@ -32,7 +35,7 @@ export default function Venus() {
             <img src="src\assets\planet-venus.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Venus</h1>
+            <h1>{planet.name}</h1>
             <p>
               Venus is the second planet from the Sun. It is named after the
               Roman goddess of love and beauty. As the brightest natural object
@@ -58,18 +61,12 @@ export default function Venus() {
             <img src="src\assets\planet-venus-internal.svg" alt="" />
           </div>
           <div className="heading-text">
-            <h1>Venus</h1>
-            <p>
-              The similarity in size and density between Venus and Earth
-              suggests they share a similar internal structure: a core, mantle,
-              and crust. Like that of Earth, Venusian core is most likely at
-              least partially liquid because the two planets have been cooling
-              at about the same rate.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.overview.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Venus#Internal_structure"
+                href={planet.overview.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,18 +86,12 @@ export default function Venus() {
             />
           </div>
           <div className="heading-text">
-            <h1>Venus</h1>
-            <p>
-              Much of the Venusian surface appears to have been shaped by
-              volcanic activity. Venus has several times as many volcanoes as
-              Earth, and it has 167 large volcanoes that are over 100 km (60 mi)
-              across. The only volcanic complex of this size on Earth is the Big
-              Island of Hawaii.
-            </p>
+            <h1>{planet.name}</h1>
+            <p>{planet.structure.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Geology_of_Venus"
+                href={planet.structure.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -114,19 +105,19 @@ export default function Venus() {
       <div className="statistics">
         <div className="row">
           <p className="stat-name">Rotation Time</p>
-          <p className="stat-value">243 Days</p>
+          <p className="stat-value">{planet.rotation}</p>
         </div>
         <div className="row">
           <p className="stat-name">Revolution Time</p>
-          <p className="stat-value">224.7 Days</p>
+          <p className="stat-value">{planet.revolution}</p>
         </div>
         <div className="row">
           <p className="stat-name">Radius</p>
-          <p className="stat-value">6,051.8 KM</p>
+          <p className="stat-value">{planet.radius}</p>
         </div>
         <div className="row">
           <p className="stat-name">Temperature</p>
-          <p className="stat-value">471°C</p>
+          <p className="stat-value">{planet.temperature}</p>
         </div>
       </div>
     </section>
