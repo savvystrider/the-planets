@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    padding: 1em;
     font-family: sans-serif;
     background: #070724 url("./src/assets/background-stars.svg") no-repeat center center;
 }
@@ -59,10 +58,30 @@ h2 {
     text-transform: uppercase;
 }
 
+header>a>h2 {
+    margin-left: 1em;
+}
+
+nav {
+    padding: 1em;
+    position: relative;
+}
+
 nav ul {
+    display: none;
+}
+
+nav ul.mobile {
     display: flex;
-    align-items: center;
-    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 5em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #070724;
 }
 
 a {
@@ -71,7 +90,7 @@ a {
 
 nav a {
     color: white;
-    font-family: "League Spartan", san;
+    font-family: "League Spartan", sans-serif;
     text-transform: uppercase;
     font-size: 0.6875rem;
     font-weight: 700;
@@ -163,7 +182,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2em;
 }
 
 .heading-text {
@@ -189,5 +209,11 @@ header {
 @media screen and (min-width: 1000px) {
     .toggle-btn {
         display: none;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1em;
     }
 }

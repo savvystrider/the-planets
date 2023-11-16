@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa6";
 
 export default function MainNavigation() {
+  const [mobileNav, setMobileNav] = useState(false);
+
+  function handleClick() {
+    setMobileNav((prev) => !prev);
+  }
+
   return (
     <header>
       <Link to="">
@@ -8,14 +16,15 @@ export default function MainNavigation() {
       </Link>
       <nav>
         <button
-          aria-expanded="false"
+          aria-expanded={mobileNav}
           aria-controls="menu"
           className="toggle-btn"
+          onClick={handleClick}
         >
-          <img src="src\assets\icon-hamburger.svg" alt="" />
+          <FaBars style={{ color: "white" }} />
           <span className="sr-only">menu</span>
         </button>
-        <ul>
+        <ul className={mobileNav ? "active" : ""}>
           <li>
             <Link to="/mercury">Mercury</Link>
           </li>

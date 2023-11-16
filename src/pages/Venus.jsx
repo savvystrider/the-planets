@@ -88,7 +88,7 @@ export default function Venus() {
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Venus#Surface_geology"
+                href="https://en.wikipedia.org/wiki/Geology_of_Venus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
