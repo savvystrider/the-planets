@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -43,7 +45,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h1 + p {
+h1+p {
     font-size: 0.6875rem;
     font-weight: 400;
     line-height: 1.375rem;
@@ -74,7 +76,8 @@ nav ul {
 nav ul.mobile {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1em;
     position: fixed;
     top: 5em;
     right: 0;
@@ -84,8 +87,25 @@ nav ul.mobile {
     background-color: #070724;
 }
 
+ul.mobile li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.circle {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+}
+
 a {
     text-decoration: none;
+}
+
+ul.mobile a {
+    font-size: 1rem;
 }
 
 nav a {
@@ -169,7 +189,8 @@ nav a {
     gap: 0.25em;
 }
 
-.source-text, .source-text>a {
+.source-text,
+.source-text>a {
     color: white;
     font-family: "League Spartan", sans-serif;
     font-size: 0.75rem;

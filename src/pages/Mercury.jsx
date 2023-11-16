@@ -5,13 +5,25 @@ export default function Mercury() {
     <section className="planet mercury">
       <Tabs>
         <TabList className="tab-list">
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#DEF4FC" }}
+          >
             Overview
           </Tab>
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#DEF4FC" }}
+          >
             Internal Structure
           </Tab>
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#DEF4FC" }}
+          >
             Surface Geology
           </Tab>
         </TabList>

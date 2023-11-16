@@ -5,13 +5,25 @@ export default function Venus() {
     <section className="planet venus">
       <Tabs>
         <TabList className="tab-list">
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#F7CC7F" }}
+          >
             Overview
           </Tab>
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#F7CC7F" }}
+          >
             Internal Structure
           </Tab>
-          <Tab className="tab" selectedClassName="active-tab">
+          <Tab
+            className="tab"
+            selectedClassName="active-tab"
+            style={{ borderColor: "#F7CC7F" }}
+          >
             Surface Geology
           </Tab>
         </TabList>
