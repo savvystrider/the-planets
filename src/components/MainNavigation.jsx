@@ -9,6 +9,10 @@ export default function MainNavigation() {
     setMobileNav((prev) => !prev);
   }
 
+  function handleLinkClick() {
+    setMobileNav(false);
+  }
+
   return (
     <header>
       <Link to="">
@@ -24,30 +28,46 @@ export default function MainNavigation() {
           <FaBars style={{ color: "white" }} />
           <span className="sr-only">menu</span>
         </button>
-        <ul className={mobileNav ? "active" : ""}>
+        <ul className={mobileNav ? "mobile" : ""}>
           <li>
-            <Link to="/mercury">Mercury</Link>
+            <Link to="/mercury" onClick={handleLinkClick}>
+              Mercury
+            </Link>
           </li>
           <li>
-            <Link to="/venus">Venus</Link>
+            <Link to="/venus" onClick={handleLinkClick}>
+              Venus
+            </Link>
           </li>
           <li>
-            <Link to="/earth">Earth</Link>
+            <Link to="/earth" onClick={handleLinkClick}>
+              Earth
+            </Link>
           </li>
           <li>
-            <Link to="/mars">Mars</Link>
+            <Link to="/mars" onClick={handleLinkClick}>
+              Mars
+            </Link>
           </li>
           <li>
-            <Link to="/jupiter">Jupiter</Link>
+            <Link to="/jupiter" onClick={handleLinkClick}>
+              Jupiter
+            </Link>
           </li>
           <li>
-            <Link to="/saturn">Saturn</Link>
+            <Link to="/saturn" onClick={handleLinkClick}>
+              Saturn
+            </Link>
           </li>
           <li>
-            <Link to="/uranus">Uranus</Link>
+            <Link to="/uranus" onClick={handleLinkClick}>
+              Uranus
+            </Link>
           </li>
           <li>
-            <Link to="/neptune">Neptune</Link>
+            <Link to="/neptune" onClick={handleLinkClick}>
+              Neptune
+            </Link>
           </li>
         </ul>
       </nav>
