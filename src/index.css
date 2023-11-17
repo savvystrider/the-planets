@@ -140,6 +140,8 @@ nav a {
     justify-content: center;
     align-items: center;
     gap: 2.688em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
 }
 
 .tab {
@@ -225,6 +227,34 @@ header {
     margin-inline: auto;
     margin-bottom: 1em;
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.planet {
+    padding: 1em;
+}
+
+.mercury .planet-img {
+    max-width: 6.9375rem;
+}
+
+.mercury .geology-img {
+    max-width: 4rem;
+}
+
+.venus .planet-img {
+    max-width: 9.625rem;
+}
+
+.venus .geology-img {
+    max-width: 4.8125rem;
+}
+
+.earth .planet-img {
+    max-width: 10.8125rem;
+}
+
+.earth .geology-img {
+    max-width: 5.40625rem;
 }
 
 @media screen and (min-width: 1000px) {

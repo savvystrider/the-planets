@@ -32,7 +32,11 @@ export default function Venus() {
         </TabList>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-venus.svg" alt="" />
+            <img
+              src="src\assets\planet-venus.svg"
+              alt="illustration of Venus"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -58,7 +62,11 @@ export default function Venus() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-venus-internal.svg" alt="" />
+            <img
+              src="src\assets\planet-venus-internal.svg"
+              alt="illustration of Venus internal"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -78,7 +86,11 @@ export default function Venus() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-venus.svg" alt="" />
+            <img
+              src="src\assets\planet-venus.svg"
+              className="planet-img"
+              alt="illustration of planet Venus"
+            />
             <img
               src="src\assets\geology-venus.png"
               alt=""

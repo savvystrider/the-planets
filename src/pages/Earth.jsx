@@ -32,7 +32,11 @@ export default function Earth() {
         </TabList>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-earth.svg" alt="" />
+            <img
+              src="src\assets\planet-earth.svg"
+              alt="illustration of Earth"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -52,7 +56,11 @@ export default function Earth() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-earth-internal.svg" alt="" />
+            <img
+              src="src\assets\planet-earth-internal.svg"
+              alt="illustration of Earth internal"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -72,7 +80,11 @@ export default function Earth() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-earth.svg" alt="" />
+            <img
+              src="src\assets\planet-earth.svg"
+              alt="illustration of planet Earth"
+              className="planet-img"
+            />
             <img
               src="src\assets\geology-earth.png"
               alt=""

@@ -32,7 +32,11 @@ export default function Mercury() {
         </TabList>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-mercury.svg" alt="" />
+            <img
+              src="src\assets\planet-mercury.svg"
+              alt="illustration of planet Mercury"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -52,7 +56,11 @@ export default function Mercury() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-mercury-internal.svg" alt="" />
+            <img
+              src="src\assets\planet-mercury-internal.svg"
+              alt="illustration of Mercury's interior"
+              className="planet-img"
+            />
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
@@ -72,7 +80,11 @@ export default function Mercury() {
         </TabPanel>
         <TabPanel>
           <div className="img-container">
-            <img src="src\assets\planet-mercury.svg" alt="" />
+            <img
+              src="src\assets\planet-mercury.svg"
+              alt="illustration of Mercury"
+              className="planet-img"
+            />
             <img
               src="src\assets\geology-mercury.png"
               alt=""
