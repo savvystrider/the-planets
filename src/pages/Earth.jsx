@@ -69,7 +69,7 @@ export default function Earth() {
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-earth.svg"
+              src="/assets/planet-earth.svg"
               alt="illustration of Earth"
               className="planet-img"
             />
