@@ -11,7 +11,7 @@ import Saturn from "./pages/Saturn";
 import Uranus from "./pages/Uranus";
 import Neptune from "./pages/Neptune";
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <RootLayout />,
@@ -27,7 +27,9 @@ const router = createBrowserRouter([
       { path: "/neptune", element: <Neptune /> },
     ],
   },
-]);
+];
+
+const router = createBrowserRouter(routes);
 
 export default function App() {
   return <RouterProvider router={router} />;
