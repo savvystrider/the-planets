@@ -135,7 +135,7 @@ nav a {
     overflow: hidden;
 }
 
-.tab-list {
+.mobile-tab-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,6 +255,87 @@ header {
 
 .earth .geology-img {
     max-width: 5.40625rem;
+}
+
+@media screen and (min-width: 48rem) {
+    .mobile-tab-list {
+        display: none;
+    }
+    
+    .heading-text {
+        text-align: left;
+        margin-inline: unset;
+    }
+
+    .heading-text h1 {
+        font-size: 3rem;
+    }
+
+    .statistics {
+        display: flex;
+        gap: 1em;
+        margin-top: 4em;
+    }
+
+    .statistics .row {
+        flex: 1;
+        width: 10.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mercury .planet-img {
+        max-width: 11.5rem;
+    }
+
+    .mercury .geology-img {
+        max-width: 5.75rem;
+    }
+
+    .react-tabs__tab-panel {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+    }
+
+    .img-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .heading-text {
+        max-width: 40%;
+    }
+
+    .desktop-tab-list {
+        max-width: 40%;
+        margin-left: auto;
+        margin-top: -12%;
+    }
+
+    .desktop-tab {
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-family: "League Spartan", sans-serif;
+        font-size: 0.5625rem;
+        font-weight: 700;
+        line-height: 1.5625rem;
+        letter-spacing: 0.12056rem;
+        text-transform: uppercase;
+        max-height: 2.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        gap: 1em;
+        outline: none;
+        padding: 1em;
+        transition: all .15s ease;
+    }
+
+    .mercury .active-desktop-tab {
+        background-color: #419EBB;
+    }
 }
 
 @media screen and (min-width: 1000px) {
