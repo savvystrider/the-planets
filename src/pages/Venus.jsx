@@ -69,7 +69,7 @@ export default function Venus() {
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-venus.svg"
+              src="public\assets\planet-venus.svg"
               alt="illustration of Venus"
               className="planet-img"
             />
@@ -86,14 +86,17 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\icon-source.svg"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-venus-internal.svg"
+              src="public\assets\planet-venus-internal.svg"
               alt="illustration of Venus internal"
               className="planet-img"
             />
@@ -110,14 +113,17 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\icon-source.svg"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-venus.svg"
+              src="public\assets\planet-venus.svg"
               className="planet-img"
               alt="illustration of planet Venus"
             />
@@ -139,7 +145,10 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\geology-venus.png"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>

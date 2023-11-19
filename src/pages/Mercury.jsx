@@ -69,7 +69,7 @@ export default function Mercury() {
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-mercury.svg"
+              src="public\assets\planet-mercury.svg"
               alt="illustration of planet Mercury"
               className="planet-img"
             />
@@ -86,14 +86,17 @@ export default function Mercury() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\icon-source.svg"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-mercury-internal.svg"
+              src="public\assets\planet-mercury-internal.svg"
               alt="illustration of Mercury's interior"
               className="planet-img"
             />
@@ -110,19 +113,22 @@ export default function Mercury() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\icon-source.svg"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-mercury.svg"
+              src="public\assets\planet-mercury.svg"
               alt="illustration of Mercury"
               className="planet-img"
             />
             <img
-              src="src\assets\geology-mercury.png"
+              src="public\assets\geology-mercury.png"
               alt="geology of Mercury"
               className="geology-img"
             />
@@ -139,7 +145,10 @@ export default function Mercury() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img
+                src="public\assets\icon-source.svg"
+                alt="external link icon"
+              />
             </p>
           </div>
         </TabPanel>
