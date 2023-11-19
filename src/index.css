@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "League Spartan", sans-serif;
   background: #070724 url("./src/assets/background-stars.svg") no-repeat center
     center;
 }
@@ -333,7 +333,8 @@ header {
   .statistics {
     display: flex;
     gap: 1em;
-    margin-top: 6em;
+    margin-top: 8em;
+    margin-inline: 1em;
   }
 
   .statistics .row {
@@ -355,6 +356,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1em;
+    padding-inline: 1em;
   }
 
   .img-container {
@@ -368,11 +370,13 @@ header {
 
   .stat-value {
     font-size: 1.5rem;
+    margin-top: 0;
   }
 
   .desktop-tab-list {
     max-width: 40%;
     margin-left: auto;
+    margin-right: 1em;
     margin-top: -16em;
   }
 
@@ -493,7 +497,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -508,6 +512,11 @@ header {
 
   .react-tabs__tab-panel {
     flex-wrap: nowrap;
+  }
+
+  .desktop-tab {
+    font-size: 0.75rem;
+    min-height: 3rem;
   }
 
   .desktop-tab-list {
@@ -536,6 +545,7 @@ header {
 
   .stat-value {
     font-size: 2.5rem;
+    margin-bottom: 1.688rem;
   }
 
   .mercury .planet-img {
