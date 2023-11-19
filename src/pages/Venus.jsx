@@ -139,7 +139,7 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img src="/assets/geology-venus.png" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
