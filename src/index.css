@@ -282,6 +282,22 @@ header {
   max-width: 8rem;
 }
 
+.uranus .planet-img {
+  max-width: 11rem;
+}
+
+.uranus .geology-img {
+  max-width: 5.5rem;
+}
+
+.neptune .planet-img {
+  max-width: 11rem;
+}
+
+.neptune .geology-img {
+  max-width: 5.5rem;
+}
+
 @media screen and (min-width: 48rem) {
   .toggle-btn {
     display: none;
@@ -404,6 +420,14 @@ header {
     background-color: #cd5120;
   }
 
+  .uranus .active-desktop-tab {
+    background-color: #1ec1a2;
+  }
+
+  .neptune .active-desktop-tab {
+    background-color: #2d68f0;
+  }
+
   .mercury .planet-img {
     max-width: 11.5rem;
   }
@@ -450,6 +474,22 @@ header {
 
   .saturn .geology-img {
     max-width: 8rem;
+  }
+
+  .uranus .planet-img {
+    max-width: 18.125rem;
+  }
+
+  .uranus .geology-img {
+    max-width: 9.0625rem;
+  }
+
+  .neptune .planet-img {
+    max-width: 18.125rem;
+  }
+
+  .neptune .geology-img {
+    max-width: 9.0625rem;
   }
 }
 
@@ -544,5 +584,21 @@ header {
 
   .saturn .geology-img {
     max-width: 10rem;
+  }
+
+  .uranus .planet-img {
+    max-width: 28.625rem;
+  }
+
+  .uranus .geology-img {
+    max-width: 14.3125rem;
+  }
+
+  .neptune .planet-img {
+    max-width: 28.625rem;
+  }
+
+  .neptune .geology-img {
+    max-width: 14.3125rem;
   }
 }
