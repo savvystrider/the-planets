@@ -266,6 +266,14 @@ header {
   max-width: 4.03125rem;
 }
 
+.jupiter .planet-img {
+  max-width: 14rem;
+}
+
+.jupiter .geology-img {
+  max-width: 7rem;
+}
+
 @media screen and (min-width: 48rem) {
   .toggle-btn {
     display: none;
@@ -380,6 +388,10 @@ header {
     background-color: #d14c32;
   }
 
+  .jupiter .active-desktop-tab {
+    background-color: #d14c32;
+  }
+
   .mercury .planet-img {
     max-width: 11.5rem;
   }
@@ -410,6 +422,14 @@ header {
 
   .mars .geology-img {
     max-width: 3.645095rem;
+  }
+
+  .jupiter .planet-img {
+    max-width: 23.0625rem;
+  }
+
+  .jupiter .geology-img {
+    max-width: 11.53125rem;
   }
 }
 
@@ -488,5 +508,13 @@ header {
 
   .mars .geology-img {
     max-width: 10.5rem;
+  }
+
+  .jupiter .planet-img {
+    max-width: 36.375rem;
+  }
+
+  .jupiter .geology-img {
+    max-width: 18.1875rem;
   }
 }
