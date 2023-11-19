@@ -69,7 +69,7 @@ export default function Saturn() {
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-saturn.svg"
+              src="/assets/planet-saturn.svg"
               alt="illustration of planet Saturn"
               className="planet-img"
             />
@@ -86,14 +86,14 @@ export default function Saturn() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-saturn-internal.svg"
+              src="/assets/planet-saturn-internal.svg"
               alt="illustration of Saturn's interior"
               className="planet-img"
             />
@@ -110,19 +110,19 @@ export default function Saturn() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-saturn.svg"
+              src="/assets/planet-saturn.svg"
               alt="illustration of Saturn"
               className="planet-img"
             />
             <img
-              src="src\assets\geology-saturn.png"
+              src="/assets/geology-saturn.png"
               alt="geology of Saturn"
               className="geology-img"
             />
@@ -139,7 +139,7 @@ export default function Saturn() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>

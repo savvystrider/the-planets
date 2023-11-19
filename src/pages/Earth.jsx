@@ -86,14 +86,14 @@ export default function Earth() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-earth-internal.svg"
+              src="/assets/planet-earth-internal.svg"
               alt="illustration of Earth internal"
               className="planet-img"
             />
@@ -110,19 +110,19 @@ export default function Earth() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="src\assets\planet-earth.svg"
+              src="/assets/planet-earth.svg"
               alt="illustration of planet Earth"
               className="planet-img"
             />
             <img
-              src="src\assets\geology-earth.png"
+              src="/assets/geology-earth.png"
               alt="geology of Earth"
               className="geology-img"
             />
@@ -139,7 +139,7 @@ export default function Earth() {
               >
                 Wikipedia
               </a>
-              <img src="src\assets\icon-source.svg" alt="external link icon" />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>

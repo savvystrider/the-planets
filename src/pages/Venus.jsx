@@ -69,7 +69,7 @@ export default function Venus() {
         <TabPanel>
           <div className="img-container">
             <img
-              src="public\assets\planet-venus.svg"
+              src="/assets/planet-venus.svg"
               alt="illustration of Venus"
               className="planet-img"
             />
@@ -86,17 +86,14 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img
-                src="public\assets\icon-source.svg"
-                alt="external link icon"
-              />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="public\assets\planet-venus-internal.svg"
+              src="/assets/planet-venus-internal.svg"
               alt="illustration of Venus internal"
               className="planet-img"
             />
@@ -113,22 +110,19 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img
-                src="public\assets\icon-source.svg"
-                alt="external link icon"
-              />
+              <img src="/assets/icon-source.svg" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="img-container">
             <img
-              src="public\assets\planet-venus.svg"
+              src="/assets/planet-venus.svg"
               className="planet-img"
               alt="illustration of planet Venus"
             />
             <img
-              src="src\assets\geology-venus.png"
+              src="/assets/geology-venus.png"
               alt="geology of Venus"
               className="geology-img"
             />
@@ -145,10 +139,7 @@ export default function Venus() {
               >
                 Wikipedia
               </a>
-              <img
-                src="public\assets\geology-venus.png"
-                alt="external link icon"
-              />
+              <img src="/assets/geology-venus.png" alt="external link icon" />
             </p>
           </div>
         </TabPanel>
