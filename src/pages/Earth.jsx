@@ -1,35 +1,71 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import planetData from "../data.json";
-
-const planet = planetData[2];
+import { useEffect, useState } from "react";
 
 export default function Earth() {
+  const [mobileView, setMobileView] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobileView(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
+  const planet = planetData[2];
+
+  const mobileTabs = (
+    <TabList className="mobile-tab-list">
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#545BFE" }}
+      >
+        Overview
+      </Tab>
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#545BFE" }}
+      >
+        Internal Structure
+      </Tab>
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#545BFE" }}
+      >
+        Surface Geology
+      </Tab>
+    </TabList>
+  );
+
+  const desktopTabs = (
+    <TabList className="desktop-tab-list">
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>01</span>
+        Overview
+      </Tab>
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>02</span>
+        Internal Structure
+      </Tab>
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>03</span>
+        Surface Geology
+      </Tab>
+    </TabList>
+  );
+
   return (
     <section className="planet earth">
-      <Tabs>
-        <TabList className="tab-list">
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#545BFE" }}
-          >
-            Overview
-          </Tab>
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#545BFE" }}
-          >
-            Internal Structure
-          </Tab>
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#545BFE" }}
-          >
-            Surface Geology
-          </Tab>
-        </TabList>
+      <Tabs defaultIndex={0}>
+        {mobileView && mobileTabs}
         <TabPanel>
           <div className="img-container">
             <img
@@ -107,6 +143,7 @@ export default function Earth() {
             </p>
           </div>
         </TabPanel>
+        {!mobileView && desktopTabs}
       </Tabs>
       <div className="statistics">
         <div className="row">

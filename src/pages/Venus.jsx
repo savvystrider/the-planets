@@ -1,35 +1,71 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import planetData from "../data.json";
-
-const planet = planetData[1];
+import { useEffect, useState } from "react";
 
 export default function Venus() {
+  const [mobileView, setMobileView] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobileView(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
+  const planet = planetData[1];
+
+  const mobileTabs = (
+    <TabList className="mobile-tab-list">
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#F7CC7F" }}
+      >
+        Overview
+      </Tab>
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#F7CC7F" }}
+      >
+        Internal Structure
+      </Tab>
+      <Tab
+        className="tab"
+        selectedClassName="active-tab"
+        style={{ borderColor: "#F7CC7F" }}
+      >
+        Surface Geology
+      </Tab>
+    </TabList>
+  );
+
+  const desktopTabs = (
+    <TabList className="desktop-tab-list">
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>01</span>
+        Overview
+      </Tab>
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>02</span>
+        Internal Structure
+      </Tab>
+      <Tab className="desktop-tab" selectedClassName="active-desktop-tab">
+        <span>03</span>
+        Surface Geology
+      </Tab>
+    </TabList>
+  );
+
   return (
     <section className="planet venus">
-      <Tabs>
-        <TabList className="tab-list">
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#F7CC7F" }}
-          >
-            Overview
-          </Tab>
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#F7CC7F" }}
-          >
-            Internal Structure
-          </Tab>
-          <Tab
-            className="tab"
-            selectedClassName="active-tab"
-            style={{ borderColor: "#F7CC7F" }}
-          >
-            Surface Geology
-          </Tab>
-        </TabList>
+      <Tabs defaultIndex={0}>
+        {mobileView && mobileTabs}
         <TabPanel>
           <div className="img-container">
             <img
@@ -40,17 +76,11 @@ export default function Venus() {
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
-            <p>
-              Venus is the second planet from the Sun. It is named after the
-              Roman goddess of love and beauty. As the brightest natural object
-              in Earth's night sky after the Moon, Venus can cast shadows and
-              can be, on rare occasions, visible to the naked eye in broad
-              daylight.
-            </p>
+            <p>{planet.overview.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/Venus"
+                href={planet.overview.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -70,11 +100,11 @@ export default function Venus() {
           </div>
           <div className="heading-text">
             <h1>{planet.name}</h1>
-            <p>{planet.overview.content}</p>
+            <p>{planet.structure.content}</p>
             <p className="source-text">
               Source:{" "}
               <a
-                href={planet.overview.source}
+                href={planet.structure.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -103,7 +133,7 @@ export default function Venus() {
             <p className="source-text">
               Source:{" "}
               <a
-                href={planet.structure.source}
+                href={planet.geology.source}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -113,6 +143,7 @@ export default function Venus() {
             </p>
           </div>
         </TabPanel>
+        {!mobileView && desktopTabs}
       </Tabs>
       <div className="statistics">
         <div className="row">
