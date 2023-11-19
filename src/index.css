@@ -258,6 +258,14 @@ header {
   max-width: 5.40625rem;
 }
 
+.mars .planet-img {
+  max-width: 8.0625rem;
+}
+
+.mars .geology-img {
+  max-width: 4.03125rem;
+}
+
 @media screen and (min-width: 48rem) {
   .toggle-btn {
     display: none;
@@ -368,6 +376,10 @@ header {
     background-color: #6d2ed5;
   }
 
+  .mars .active-desktop-tab {
+    background-color: #d14c32;
+  }
+
   .mercury .planet-img {
     max-width: 11.5rem;
   }
@@ -390,6 +402,14 @@ header {
 
   .earth .geology-img {
     max-width: 8.90625rem;
+  }
+
+  .mars .planet-img {
+    max-width: 7.29019rem;
+  }
+
+  .mars .geology-img {
+    max-width: 3.645095rem;
   }
 }
 
@@ -460,5 +480,13 @@ header {
 
   .earth .geology-img {
     max-width: 14.0625rem;
+  }
+
+  .mars .planet-img {
+    max-width: 21rem;
+  }
+
+  .mars .geology-img {
+    max-width: 10.5rem;
   }
 }

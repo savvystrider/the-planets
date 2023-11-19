@@ -123,7 +123,7 @@ export default function Mercury() {
             />
             <img
               src="src\assets\geology-mercury.png"
-              alt=""
+              alt="geology of Mercury"
               className="geology-img"
             />
           </div>

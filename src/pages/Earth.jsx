@@ -123,7 +123,7 @@ export default function Earth() {
             />
             <img
               src="src\assets\geology-earth.png"
-              alt=""
+              alt="geology of Earth"
               className="geology-img"
             />
           </div>

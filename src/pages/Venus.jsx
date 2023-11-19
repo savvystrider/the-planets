@@ -123,7 +123,7 @@ export default function Venus() {
             />
             <img
               src="src\assets\geology-venus.png"
-              alt=""
+              alt="geology of Venus"
               className="geology-img"
             />
           </div>
