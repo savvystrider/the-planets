@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "League Spartan", sans-serif;
-  background: #070724 url("./src/assets/background-stars.svg") no-repeat center
+  background: #070724 url("/assets/background-stars.svg") no-repeat center
     center;
 }
 
